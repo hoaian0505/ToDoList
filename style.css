@@ -26,7 +26,17 @@ body{
     text-align: center;
 }
 
-.txtb{
+.txtlist{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    background: none;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+.txtb {
     width: 100%;
     border: none;
     border-bottom: 2px solid #000;
@@ -59,3 +69,46 @@ h2{
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
+
+.date{
+    text-align: left;
+}
+
+.task-list{
+    line-height: 1.7;
+    list-style: circle;
+    padding-top: 15px;
+    text-align: left;
+    cursor: pointer;
+}
+  
+.blue {
+    color: blue;
+  }
+
+.upcase{
+    text-transform: uppercase;
+}
+
+.taskRemain{
+    font-size: 15px;
+    float: right;
+}
+
+.active-list {
+    font-weight: 1000;
+}
+
+.btn-delete {
+    text-align: right;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
