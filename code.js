@@ -85,12 +85,16 @@ deleteListButton.addEventListener('click', e => {
 
                                 var del = $("<i class='fas fa-trash-alt'></i>").click(function(){
                                     var p = $(this).parent();
-                                    taskRemain-=1;
-                                    CountTask();
+
                                     for (j=2;j<localStorage.length;j+=2){
                                         if (localStorage.getItem(j)==p.text())
                                         {
                                             localStorage.setItem(j,"");
+                                            if (localStorage.getItem(j+1) !="true")
+                                            {
+                                                taskRemain-=1;
+                                                CountTask();
+                                            }
                                             break;
                                         }
                                     }
